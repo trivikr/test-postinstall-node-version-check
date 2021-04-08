@@ -1,6 +1,6 @@
 {
   "name": "test-postinstall-node-version-check",
-  "version": "0.0.3",
+  "version": "0.1.1",
   "description": "Test warning for deprecated Node.js versions in postinstall script",
   "main": "index.js",
   "repository": "git@github.com:trivikr/test-postinstall-node-version-check.git",
