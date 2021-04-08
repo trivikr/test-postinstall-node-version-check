@@ -10,8 +10,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
-
-      - name: Automated releases for npm packages.
-        uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v1
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           token: ${{ secrets.NPM_AUTH_TOKEN }}
