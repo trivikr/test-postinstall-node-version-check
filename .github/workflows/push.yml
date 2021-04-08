@@ -1,5 +1,19 @@
-- name: Automated releases for npm packages.
-  uses: mikeal/merge-release@v4.0.7
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+name: push
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Automated releases for npm packages.
+      uses: mikeal/merge-release@v4.0.7
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
