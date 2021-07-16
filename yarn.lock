@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-postinstall-node-version-check@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/postinstall-node-version-check/-/postinstall-node-version-check-0.0.3.tgz#b00bef934a312f96693782e54996c338186cbb03"
-  integrity sha512-60v79BkURuqvJLCNxTjfhoQ2r6ADQCN/9l/NLrLq+ylxp1uPKPV1UMFtSMjkbW3EvpQLVbZKSINExRLdRCxpnQ==
+postinstall-node-version-check@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/postinstall-node-version-check/-/postinstall-node-version-check-0.2.4.tgz#b7615793b6c3027d094a301911fa65784bf106ac"
+  integrity sha512-lF+FyL/SyGvMSEimBBovBO/bygMJegx2Ar3aRnX6cf+12PvOdZ6f8CVVJlAPudo3LtZvROkisqMr3mUsMQi4ow==
